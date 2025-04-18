@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8 - Cálculo da média final de um aluno SGA</title>
+</head>
+<body>
+    <form>
+    <h2>Exercício 8 <p></p>-  Cálculo da média final de um aluno SGA</h2>
+    <p> 8- Cálculo da média final de um aluno SGA:</p>
+    <p>Enunciado: Crie um algoritmo em PHP que receba três notas de um aluno via formulário HTML. As notas devem ser armazenadas em um array e a média final calculada. O sistema deve exibir a média e a situação do aluno:    
+     <p>"Aprovado" (média ≥ 7) ou "Reprovado" (média < 7). Considere o sistema de notas do SGA: ((A1*2)+(A2*2)+(A3*1))/5 </p>   
+     <p>-------------------------------------</p>
+     <p>Passos a seguir:</p>
+     <p>Crie um formulário HTML com três campos para as notas.  </p>
+     <p>O PHP deve calcular a média e exibir a situação do aluno no navegador. </p>
+     
+     <p>--------------------------------------</p>
+    </form>
+    
+    <form name="exercicio8" action="Exercicio8.php" method="post">
+        <label for="nota1">Nota A1:</label>
+        <input type="number" name="notas[]" id="nota1" step="0.01" required><br><br>
+
+        <label for="nota2">Nota A2:</label>
+        <input type="number" name="notas[]" id="nota2" step="0.01" required><br><br>
+
+        <label for="nota3">Nota A3:</label>
+        <input type="number" name="notas[]" id="nota3" step="0.01" required><br><br>
+
+        <input type="submit" value="Calcular Média">
+    </form>
+    <p></p>
+    <a href="index.html"><button>Voltar a lista de exercícios</button></a>
+
+</body>
+</html>

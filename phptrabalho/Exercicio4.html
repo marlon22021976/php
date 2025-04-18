@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4 - Calculadora com switch</title>
+</head>
+<body>
+    <form>
+    <h2>Exercício 4 <p></p>- Calculadora com switch</h2>
+    <p> 4- Calculadora com switch:</p>
+    <p>Enunciado:  Crie uma calculadora em PHP que receba duas entradas numéricas e uma operação (soma, subtração, multiplicação ou divisão) através de um formulário HTML. Dependendo da operação escolhida, o sistema deve realizar a operação e exibir o resultado.   
+     <p>-------------------------------------</p>
+     <p>Passos a seguir:</p>
+     <p>Crie um formulário HTML com dois campos de entrada para os números e uma opção para selecionar a operação.  </p>
+     <p>O PHP deve usar switch case para realizar a operação e exibir o resultado no navegador.</p>
+     
+     <p>--------------------------------------</p>
+    </form>
+
+    <form name="exercicio4" action="Exercicio4.php" method="post">
+        <label for="num1">Número 1:</label>
+        <input type="number" name="num1" id="num1" step="any" required><br><br>
+
+        <label for="num2">Número 2:</label>
+        <input type="number" name="num2" id="num2" step="any" required><br><br>
+
+        <label for="operacao">Operação:</label>
+        <select name="operacao" id="operacao" required>
+            <option value="soma">Soma</option>
+            <option value="subtracao">Subtração</option>
+            <option value="multiplicacao">Multiplicação</option>
+            <option value="divisao">Divisão</option>
+        </select><br><br>
+
+        <input type="submit" value="Calcular">
+    </form>
+    <p></p>
+    <a href="index.html"><button>Voltar a lista de exercícios</button></a>
+</body>
+</html>
